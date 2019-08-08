@@ -2,7 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <app-quote quote="A wonderful quote!"></app-quote>
+        <app-quote>
+          <h2>{{quoteTitle}}</h2>
+          <p>A wonderful quote!</p>
+        </app-quote>
       </div>
     </div>
   </div>
@@ -12,6 +15,11 @@
   import Quote from './components/Quotes';
 
   export default {
+    data : function() {
+      return {
+        quoteTitle: 'The Quote'
+      }
+    },
     components: {
       appQuote: Quote
     }
