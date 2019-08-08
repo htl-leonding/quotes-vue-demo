@@ -1,18 +1,21 @@
 <template>
-  <div id="container">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-
+      <div class="col-12">
+        <app-quote quote="A wonderful quote!"></app-quote>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Quote from './components/Quotes';
 
-export default {
-
-}
+  export default {
+    components: {
+      appQuote: Quote
+    }
+  }
 </script>
 
 <style>
